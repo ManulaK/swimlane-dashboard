@@ -4,15 +4,23 @@ import Link from 'next/link';
 
 export default function Sidebar() {
 	return (
-		<aside className="w-64 bg-[var(--color-card)] border-r border-[var(--color-border)] flex flex-col py-8 gap-8 min-h-0 h-[calc(100vh-4rem)] sticky top-16 hidden md:flex">
+		<aside
+			className="w-64 flex-col py-8 gap-8 min-h-0 h-[calc(100vh-4rem)] sticky top-16 hidden md:flex"
+			style={{ background: 'var(--color-card)', borderRight: '1px solid var(--color-border)' }}
+		>
 			<div className="mb-4">
-				<div className="flex items-center gap-3 bg-[var(--color-card)] rounded-xl border border-[var(--color-border)] px-4 py-3 shadow-sm">
+				<div
+					className="flex items-center gap-3 rounded-xl border px-4 py-3 shadow-sm"
+					style={{ background: 'var(--color-card)', borderColor: 'var(--color-border)' }}
+				>
 					<Image src="/svg/Image Team.svg" alt="Workspace" width={44} height={44} />
 					<div className="flex flex-col flex-1">
-						<span className="text-xs text-[var(--color-sidebar)] font-medium">workspace</span>
+						<span className="text-xs font-medium" style={{ color: 'var(--color-sidebar)' }}>
+							workspace
+						</span>
 						<span
-							className="text-lg font-semibold text-[var(--color-text)] leading-tight"
-							style={{ textShadow: '0px 4px 8px rgba(53, 57, 69, 0.12)' }}
+							className="text-lg font-semibold leading-tight"
+							style={{ color: 'var(--color-text)', textShadow: '0px 4px 8px rgba(53, 57, 69, 0.12)' }}
 						>
 							Root folder
 						</span>
@@ -23,7 +31,7 @@ export default function Sidebar() {
 			<nav className="flex-1 flex flex-col gap-2 px-4">
 				<Link
 					href="/"
-					className="text-base py-2 rounded-md transition hover:bg-[var(--color-bg)] cursor-pointer flex items-center gap-3"
+					className="text-base py-2 rounded-md transition cursor-pointer flex items-center gap-3"
 					style={{ color: 'var(--color-sidebar)' }}
 				>
 					<Image
@@ -37,7 +45,7 @@ export default function Sidebar() {
 				</Link>
 				<Link
 					href="/boards"
-					className="text-base py-2 rounded-md transition hover:bg-[var(--color-bg)] cursor-pointer flex items-center gap-3"
+					className="text-base py-2 rounded-md transition cursor-pointer flex items-center gap-3"
 					style={{ color: 'var(--color-sidebar)' }}
 				>
 					<Image
@@ -51,7 +59,7 @@ export default function Sidebar() {
 				</Link>
 				<Link
 					href="/messages"
-					className="text-base py-2 rounded-md transition hover:bg-[var(--color-bg)] cursor-pointer flex items-center gap-3"
+					className="text-base py-2 rounded-md transition cursor-pointer flex items-center gap-3"
 					style={{ color: 'var(--color-sidebar)' }}
 				>
 					<Image
@@ -65,7 +73,7 @@ export default function Sidebar() {
 				</Link>
 				<Link
 					href="/calendar"
-					className="text-base py-2 rounded-md transition hover:bg-[var(--color-bg)] cursor-pointer flex items-center gap-3"
+					className="text-base py-2 rounded-md transition cursor-pointer flex items-center gap-3"
 					style={{ color: 'var(--color-sidebar)' }}
 				>
 					<Image
@@ -79,7 +87,7 @@ export default function Sidebar() {
 				</Link>
 				<Link
 					href="/team"
-					className="text-base py-2 rounded-md transition hover:bg-[var(--color-bg)] cursor-pointer flex items-center gap-3"
+					className="text-base py-2 rounded-md transition cursor-pointer flex items-center gap-3"
 					style={{ color: 'var(--color-sidebar)' }}
 				>
 					<Image
@@ -93,7 +101,10 @@ export default function Sidebar() {
 				</Link>
 			</nav>
 			<div className="mt-auto px-4 flex flex-col gap-4 pb-2">
-				<button className="flex items-center gap-3 text-base font-medium text-[var(--color-sidebar)] bg-transparent border-none cursor-pointer px-0 py-2 hover:bg-[var(--color-bg)] rounded-md">
+				<button
+					className="flex items-center gap-3 text-base font-medium bg-transparent border-none cursor-pointer px-0 py-2 rounded-md"
+					style={{ color: 'var(--color-sidebar)' }}
+				>
 					<Image
 						src="/svg/Info Circle.svg"
 						alt="Support"
@@ -103,7 +114,16 @@ export default function Sidebar() {
 					/>
 					Support
 				</button>
-				<button className="flex items-center gap-3 text-base font-semibold text-white bg-[var(--color-dark)] w-full py-3 rounded-xl justify-center hover:bg-[var(--color-text)] transition">
+				<button
+					className="flex items-center gap-3 text-base font-semibold w-full py-3 rounded-xl justify-center transition"
+					style={{ background: 'var(--color-dark)', color: 'var(--color-white)' }}
+					onMouseOver={(e) => {
+						e.currentTarget.style.background = 'var(--color-text)';
+					}}
+					onMouseOut={(e) => {
+						e.currentTarget.style.background = 'var(--color-dark)';
+					}}
+				>
 					<Image src="/svg/Sign Out.svg" alt="Logout" width={24} height={24} style={{ filter: 'invert(1) brightness(2)' }} />
 					Logout
 				</button>

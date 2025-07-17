@@ -20,7 +20,8 @@ export default function Header() {
 				{/* Hide button on small screens */}
 				<button
 					type="button"
-					className="hidden md:flex bg-[#377DFF] text-white px-4 md:px-6 py-2 rounded-[6px] font-normal text-[12px] items-center gap-2 shadow hover:bg-[#2563eb] transition whitespace-nowrap"
+					className="hidden md:flex px-4 md:px-6 py-2 rounded-[6px] font-normal text-[12px] items-center gap-2 shadow transition whitespace-nowrap hover:bg-[var(--color-dark)]"
+					style={{ background: 'var(--color-primary)', color: 'var(--color-white)' }}
 					aria-label="Create new board"
 				>
 					<span style={{ width: 20 }} />
