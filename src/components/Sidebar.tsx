@@ -202,6 +202,26 @@ export default function Sidebar() {
 					);
 				})}
 			</nav>
+			<div className="flex flex-col gap-2 px-4 mt-auto mb-4">
+				<button
+					className="flex items-center gap-2 px-3 py-2 rounded-xl border border-gray-400 text-sidebar hover:text-primary hover:bg-primary/5 transition"
+					// onClick={...} // Add your support action here
+				>
+					<span className="w-7 flex justify-center items-center">
+						<Image src="/svg/Info Circle.svg" alt="Support" width={20} height={20} />
+					</span>
+					<span className="flex-1 text-left">Support</span>
+				</button>
+				<button
+					className="flex items-center gap-2 px-3 py-2 rounded-xl bg-[#353945] text-white w-full justify-start transition"
+					// onClick={...} // Add your logout action here
+				>
+					<span className="w-7 flex justify-center items-center">
+						<Image src="/svg/Sign Out.svg" alt="Logout" width={20} height={20} />
+					</span>
+					<span className="flex-1 text-left">Logout</span>
+				</button>
+			</div>
 		</aside>
 	);
 }
