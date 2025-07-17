@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+:root {
+	--color-primary: #3772ff;
+	--color-dark: #353945;
+	--color-sidebar: #777e90;
+	--color-bg: #f9fafb;
+	--color-card: #fff;
+	--color-border: #ececec;
+	--color-accent: #ffb200;
+	--color-text: #222;
+}
+
+/* Responsive breakpoints for reference */
+@media (max-width: 640px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1025px) {
+	html {
+		font-size: 18px;
+	}
+}

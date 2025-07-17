@@ -1,3 +1,5 @@
+'use client';
+
 export default function Home() {
-	return <main>Dashboard</main>;
+	return <div className="text-2xl font-bold">Welcome to the Board App!</div>;
 }
