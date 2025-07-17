@@ -1,3 +1,9 @@
+import SwimlaneBoard from '@/components/SwimlaneBoard';
+
 export default function BoardsPage() {
-	return <div className="text-2xl font-bold">Boards Page</div>;
+	return (
+		<main className="min-h-screen bg-gray-100">
+			<SwimlaneBoard />
+		</main>
+	);
 }
