@@ -1,8 +1,13 @@
+'use client';
 import Image from 'next/image';
+import { useTaskStore } from '../store/taskStore';
 
 export default function SearchBar() {
+	const searchQuery = useTaskStore((s) => s.searchQuery);
+	const setSearchQuery = useTaskStore((s) => s.setSearchQuery);
+
 	return (
-		<form className="relative w-full max-w-md" role="search" aria-label="Search tasks">
+		<form className="relative w-full max-w-md" role="search" aria-label="Search tasks" onSubmit={(e) => e.preventDefault()}>
 			<label htmlFor="search-tasks" className="sr-only">
 				Search tasks
 			</label>
@@ -15,6 +20,8 @@ export default function SearchBar() {
 				placeholder="Search tasks ..."
 				className="w-full pl-9 pr-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
 				autoComplete="off"
+				value={searchQuery}
+				onChange={(e) => setSearchQuery(e.target.value)}
 			/>
 		</form>
 	);

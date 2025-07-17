@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { useTaskStore, Task } from '../../store/taskStore';
 import TaskCard from './TaskCard';
@@ -10,8 +11,13 @@ interface SwimlaneProps {
 }
 
 const Swimlane: React.FC<SwimlaneProps> = ({ status, label, droppableId }) => {
-	const { tasks } = useTaskStore();
-	const filtered = tasks.filter((task) => task.status === status);
+	const { tasks, searchQuery } = useTaskStore();
+	const filtered = tasks.filter((task) => {
+		const matchesStatus = task.status === status;
+		const q = searchQuery.trim().toLowerCase();
+		const matchesQuery = !q || task.title.toLowerCase().includes(q) || task.category.toLowerCase().includes(q);
+		return matchesStatus && matchesQuery;
+	});
 
 	return (
 		<Droppable droppableId={droppableId}>

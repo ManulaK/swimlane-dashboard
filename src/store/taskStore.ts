@@ -16,6 +16,8 @@ type TaskStore = {
 	setTasks: (tasks: Task[]) => void;
 	moveTask: (taskId: string, newStatus: Task['status']) => void;
 	loadTasks: (tasks: Task[]) => void;
+	searchQuery: string;
+	setSearchQuery: (query: string) => void;
 };
 
 export const useTaskStore = create<TaskStore>((set, get) => ({
@@ -32,4 +34,6 @@ export const useTaskStore = create<TaskStore>((set, get) => ({
 	loadTasks: (tasks) => {
 		set({ tasks });
 	},
+	searchQuery: '',
+	setSearchQuery: (query) => set({ searchQuery: query }),
 }));
