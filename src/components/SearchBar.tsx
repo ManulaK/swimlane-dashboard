@@ -18,7 +18,7 @@ export default function SearchBar() {
 				id="search-tasks"
 				type="search"
 				placeholder="Search tasks ..."
-				className="w-full pl-9 pr-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+				className="w-full pl-9 pr-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] text-[12px] font-normal"
 				autoComplete="off"
 				value={searchQuery}
 				onChange={(e) => setSearchQuery(e.target.value)}
