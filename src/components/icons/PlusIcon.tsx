@@ -1,0 +1,12 @@
+import React from 'react';
+
+const PlusIcon = ({ className = '', ...props }: React.SVGProps<SVGSVGElement>) => (
+	<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} {...props}>
+		<path
+			d="M12 6.72998C12.5523 6.72998 13 7.1777 13 7.72998V11.73H17C17.5523 11.73 18 12.1777 18 12.73C18 13.2823 17.5523 13.73 17 13.73H13V17.73C13 18.2823 12.5523 18.73 12 18.73C11.4477 18.73 11 18.2823 11 17.73V13.73H7C6.44772 13.73 6 13.2823 6 12.73C6 12.1777 6.44772 11.73 7 11.73H11V7.72998C11 7.1777 11.4477 6.72998 12 6.72998Z"
+			fill="#353945"
+		/>
+	</svg>
+);
+
+export default PlusIcon;

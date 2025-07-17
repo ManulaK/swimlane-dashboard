@@ -9,6 +9,7 @@ export type Task = {
 	assignees: string[];
 	dueDate: string;
 	reports: number;
+	image?: string;
 };
 
 type TaskStore = {

@@ -1,0 +1,21 @@
+import React from 'react';
+
+const FlashIcon = (props: React.SVGProps<SVGSVGElement>) => (
+	<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+		<g clipPath="url(#clip0_219_18)">
+			<path
+				fillRule="evenodd"
+				clipRule="evenodd"
+				d="M12.3609 13.7301L11.376 19.6397L17.0885 11.7301H11.6391L12.624 5.82043L6.91151 13.7301H12.3609ZM15.2984 1.93964C15.4722 0.897001 14.1202 0.332846 13.5013 1.18975L4.14508 14.1446C3.66745 14.8059 4.13999 15.7301 4.95576 15.7301H10L8.7016 23.5205C8.52782 24.5631 9.8798 25.1273 10.4987 24.2704L19.8549 11.3155C20.3326 10.6542 19.86 9.73005 19.0442 9.73005H14L15.2984 1.93964Z"
+				fill="#353945"
+			/>
+		</g>
+		<defs>
+			<clipPath id="clip0_219_18">
+				<rect width="24" height="24" fill="white" transform="translate(0 0.72998)" />
+			</clipPath>
+		</defs>
+	</svg>
+);
+
+export default FlashIcon;
