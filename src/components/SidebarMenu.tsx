@@ -6,7 +6,7 @@ import ArrowRightIcon from './icons/ArrowRightIcon';
 interface MenuItem {
 	label: string;
 	href: string;
-	iconComponent?: React.ComponentType<any>;
+	iconComponent?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 	alt?: string;
 	active: boolean;
 	badge?: number;

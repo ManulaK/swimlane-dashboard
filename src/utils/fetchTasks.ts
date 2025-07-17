@@ -1,4 +1,6 @@
-export async function fetchTasks(): Promise<any[]> {
+import { Task } from '../store/taskStore';
+
+export async function fetchTasks(): Promise<Task[]> {
 	// Try to load from localStorage first
 	if (typeof window !== 'undefined') {
 		const stored = localStorage.getItem('tasks');
