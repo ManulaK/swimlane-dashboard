@@ -3,7 +3,7 @@ import AvatarGroup from '../commonComponents/AvatarGroup';
 
 function ProjectSummaryWidget() {
 	return (
-		<section className="bg-white rounded-lg shadow p-4 mb-4 border border-[var(--color-border)]">
+		<section className="bg-white rounded-lg p-4 mb-4">
 			<div className="flex items-center gap-3 mb-1">
 				<h1 className="text-xl font-bold">Sport Xi Project</h1>
 				<span className="text-xs font-medium text-black px-3 py-1 rounded" style={{ background: 'var(--color-orange)' }}>

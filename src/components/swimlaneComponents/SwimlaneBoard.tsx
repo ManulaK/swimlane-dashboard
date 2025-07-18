@@ -33,7 +33,7 @@ const SwimlaneBoard: React.FC = () => {
 
 	return (
 		<DragDropContext onDragEnd={onDragEnd}>
-			<div className="swimlane-board grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
+			<div className="swimlane-board grid grid-cols-1 md:grid-cols-4 gap-4">
 				{STATUSES.map((status) => (
 					<Swimlane key={status.key} status={status.key as Task['status']} label={status.label} droppableId={status.key} />
 				))}
