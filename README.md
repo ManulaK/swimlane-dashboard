@@ -2,6 +2,10 @@
 
 A modern project management dashboard built with [Next.js](https://nextjs.org), featuring swimlane boards, team collaboration, and productivity tools.
 
+## Project Preview
+
+![Swimlane Dashboard Preview](public/images/project.png)
+
 ## Features
 
 -    Swimlane-style project boards
