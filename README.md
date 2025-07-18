@@ -8,7 +8,13 @@ A modern project management dashboard built with [Next.js](https://nextjs.org), 
 
 ## Live Demo
 
-[View the app online](https://swimlane-dashboard-dn679re4q-manulaks-projects.vercel.app/)
+Experience the Swimlane Dashboard live:
+
+[https://swimlane-dashboard-l81p.vercel.app/boards/sport-xi-project](https://swimlane-dashboard-l81p.vercel.app/boards/sport-xi-project)
+
+> **Try the Sport Xi Project board in action!**
+
+---
 
 ## Features
 
