@@ -1,5 +1,5 @@
-import SwimlaneBoard from '@/components/SwimlaneBoard/SwimlaneBoard';
-import ProjectSummaryWidget from '@/components/SwimlaneBoard/ProjectSummaryWidget';
+import SwimlaneBoard from '@/components/SwimlaneBoardComponents/SwimlaneBoard';
+import ProjectSummaryWidget from '@/components/SwimlaneBoardComponents/ProjectSummaryWidget';
 
 export default function SportXiProjectPage() {
 	return (

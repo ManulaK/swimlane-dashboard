@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-import FolderIcon from './icons/FolderIcon';
-import GridIcon from './icons/GridIcon';
-import MessageIcon from './icons/MessageIcon';
-import CalendarIcon from './icons/CalendarIcon';
-import UserIcon from './icons/UserIcon';
+import FolderIcon from '../icons/FolderIcon';
+import GridIcon from '../icons/GridIcon';
+import MessageIcon from '../icons/MessageIcon';
+import CalendarIcon from '../icons/CalendarIcon';
+import UserIcon from '../icons/UserIcon';
 import SidebarWorkspaceWidget from './SidebarWorkspaceWidget';
 import SidebarMenu from './SidebarMenu';
 import SidebarFooter from './SidebarFooter';
@@ -21,7 +21,7 @@ export default function Sidebar() {
 	const menu = [
 		{
 			label: 'Dashboard',
-			href: '/',
+			href: '/dashboard',
 			iconComponent: GridIcon,
 			alt: 'Dashboard',
 			active: pathname === '/',
@@ -85,12 +85,7 @@ export default function Sidebar() {
 			{/* Workspace widget */}
 			<SidebarWorkspaceWidget />
 			<nav className="flex flex-col gap-1 px-3 mt-2">
-				<SidebarMenu
-					menu={menu}
-					openMenus={openMenus}
-					setOpenMenus={setOpenMenus}
-					pathname={pathname}
-				/>
+				<SidebarMenu menu={menu} openMenus={openMenus} setOpenMenus={setOpenMenus} pathname={pathname} />
 			</nav>
 			<SidebarFooter />
 		</aside>

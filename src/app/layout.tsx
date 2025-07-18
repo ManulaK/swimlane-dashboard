@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import Sidebar from '@/components/Sidebar';
-import Image from 'next/image';
+import Sidebar from '@/components/SideBarComponents/Sidebar';
 import './globals.css';
 import Header from '@/components/Header';
 
 const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'],
-	display: 'swap', // Best practice for web fonts
+	display: 'swap',
 });
 
 export const metadata: Metadata = {
-	title: 'Board App', // More descriptive title
+	title: 'Board App',
 	description: 'A collaborative board management application',
 };
 

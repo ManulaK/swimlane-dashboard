@@ -1,6 +1,6 @@
 import React from 'react';
-import InfoCircleIcon from './icons/InfoCircleIcon';
-import SignOutIcon from './icons/SignOutIcon';
+import InfoCircleIcon from '../icons/InfoCircleIcon';
+import SignOutIcon from '../icons/SignOutIcon';
 
 const SidebarFooter = () => (
 	<div className="flex flex-col gap-2 px-4 mt-auto mb-4">
