@@ -3,8 +3,8 @@ import React from 'react';
 import { useTaskStore, Task } from '../../store/taskStore';
 import TaskCard from './TaskCard';
 import { Droppable } from '@hello-pangea/dnd';
-import PlusIcon from '../icons/PlusIcon';
-import DotsIcon from '../icons/DotsIcon';
+import PlusIcon from '../iconsComponents/PlusIcon';
+import DotsIcon from '../iconsComponents/DotsIcon';
 
 // Status color map
 const STATUS_COLORS: Record<string, string> = {

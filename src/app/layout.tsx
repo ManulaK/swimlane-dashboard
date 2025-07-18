@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import Sidebar from '@/components/SideBarComponents/Sidebar';
 import './globals.css';
-import Header from '@/components/Header';
+import AppShell from '@/layouts/AppShell';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -23,17 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={poppins.className} suppressHydrationWarning>
 			<body>
-				<div className="min-h-screen flex flex-col bg-[var(--color-bg)]">
-					{/* Header Bar */}
-					<Header />
-					<div className="flex flex-1 pt-16">
-						{/* Sidebar */}
-						<Sidebar />
-						<main className="flex-1 p-4" tabIndex={-1} id="main-content">
-							{children}
-						</main>
-					</div>
-				</div>
+				<AppShell>{children}</AppShell>
 			</body>
 		</html>
 	);

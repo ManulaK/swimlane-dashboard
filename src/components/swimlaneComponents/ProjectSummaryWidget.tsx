@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import AvatarGroup from '../AvatarGroup';
+import AvatarGroup from '../commonComponents/AvatarGroup';
 
 function ProjectSummaryWidget() {
 	return (

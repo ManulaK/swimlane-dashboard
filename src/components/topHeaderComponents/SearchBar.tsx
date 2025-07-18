@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useTaskStore } from '../store/taskStore';
+import { useTaskStore } from '../../store/taskStore';
 
 export default function SearchBar() {
 	const searchQuery = useTaskStore((s) => s.searchQuery);

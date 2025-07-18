@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import ArrowDownIcon from '../icons/ArrowDownIcon';
-import ArrowRightIcon from '../icons/ArrowRightIcon';
+import ArrowDownIcon from '../iconsComponents/ArrowDownIcon';
+import ArrowRightIcon from '../iconsComponents/ArrowRightIcon';
 
 interface MenuItem {
 	label: string;

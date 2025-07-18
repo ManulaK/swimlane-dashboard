@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
 				destination: '/boards/sport-xi-project',
 				permanent: true,
 			},
+			{
+				source: '/boards',
+				destination: '/boards/sport-xi-project',
+				permanent: true,
+			},
 		];
 	},
 };

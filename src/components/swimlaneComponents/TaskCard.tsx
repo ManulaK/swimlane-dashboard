@@ -1,14 +1,14 @@
 import React from 'react';
 import { Task } from '../../store/taskStore';
 import { Draggable } from '@hello-pangea/dnd';
-import DotsIcon from '../icons/DotsIcon';
-import MessageIcon from '../icons/MessageIcon';
-import UserIcon from '../icons/UserIcon';
-import InfoCircleIcon from '../icons/InfoCircleIcon';
-import CalendarIcon from '../icons/CalendarIcon';
+import DotsIcon from '../iconsComponents/DotsIcon';
+import MessageIcon from '../iconsComponents/MessageIcon';
+import UserIcon from '../iconsComponents/UserIcon';
+import InfoCircleIcon from '../iconsComponents/InfoCircleIcon';
+import CalendarIcon from '../iconsComponents/CalendarIcon';
 import Image from 'next/image';
-import AvatarGroup from '../AvatarGroup';
-import FlashIcon from '../icons/FlashIcon';
+import AvatarGroup from '../commonComponents/AvatarGroup';
+import FlashIcon from '../iconsComponents/FlashIcon';
 
 interface TaskCardProps {
 	task: Task;
