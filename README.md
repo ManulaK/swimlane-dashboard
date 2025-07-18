@@ -6,6 +6,10 @@ A modern project management dashboard built with [Next.js](https://nextjs.org), 
 
 ![Swimlane Dashboard Preview](public/images/project.png)
 
+## Live Demo
+
+[View the app online](https://swimlane-dashboard-dn679re4q-manulaks-projects.vercel.app/)
+
 ## Features
 
 -    Swimlane-style project boards
