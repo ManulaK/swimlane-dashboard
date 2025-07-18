@@ -4,7 +4,7 @@ import ArrowDownIcon from '../iconsComponents/ArrowDownIcon';
 
 const SidebarWorkspaceWidget = () => (
 	<div>
-		<div className="rounded-[6px] border px-3 py-2 flex items-center gap-3 shadow-sm bg-white border-gray-300 mx-4">
+		<div className="rounded-[6px] border px-3 py-2 flex items-center gap-3 shadow-sm bg-white border-gray-300 mx-4 mt-2">
 			<Image src="/svg/Image Team.svg" alt="Workspace" width={44} height={44} />
 			<div className="flex flex-col flex-1">
 				<span className="text-[12px] font-medium text-[#B1B5C3]">workspace</span>
